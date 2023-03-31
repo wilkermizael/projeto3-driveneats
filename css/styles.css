@@ -8,21 +8,24 @@ body{
 }
 .main{
     width: 414px;
-    height: 800px; /* Retirar altura*/
-    background-color: aqua;
+    height:1000px; /* Retirar altura*/
+    background-color: #E5E5E5;
     margin: 0 auto;
-
+    position: relative;
+    
     display: flex;
     flex-direction: column;
-    position: relative;
+    align-items: center;
+    
 }
 
 .header{
     width:100%;
-    height: 92px;
+    height: 82px;
     background-color: #CF2B2B;
-    position: absolute;
-
+    
+    position:fixed;
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -35,7 +38,7 @@ body{
     width: 248px;
     height: 50px;
     margin-bottom: 25px;
-    margin-left: 15px;
+    margin-left: 18px;
 }
 
 .name-restaurant h1{
@@ -52,8 +55,158 @@ body{
     font-weight: 400;
     font-size: 18px;
     font-style: normal;
-    font-family: 'Righteous', cursive;
     font-family: 'Roboto', sans-serif;
     line-height: 12px;
 
+}
+
+.container-conteudo{
+    width: 100%;
+     /*min-height: 200px;*verificar se precisa retirar altura*/
+    
+    position: relative;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    flex-direction: column;
+    
+}
+
+.container-conteudo h3{
+    width: 330px;
+    height: 26px;
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    color: #333333;
+    font-weight: 400;
+    font-size: 26px;
+    font-style: normal;
+    font-family: 'Righteous', cursive;
+    line-height: 12px;
+    
+}
+
+.titulo{
+    width: 250px;
+    height: 25px;
+    margin-bottom: 17px;
+    margin-left: 15px;
+}
+.cardapio{
+    width: 100%;
+    min-height: 216px;
+  
+    margin-right: 15px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    
+    overflow-x:scroll;
+    padding-right: 15px;
+   
+    
+    
+}
+
+.opcao{
+    min-width:172px;
+    height:200px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    
+    margin-left: 15px;
+    padding-top: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    
+
+   
+
+}
+
+.opcao img{
+    width: 144px;
+    height: 87px;
+    
+}
+
+.opcao h4{
+    width: 139px;
+    height: 23px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.opcao p{
+    width: 147px;
+    height: 15px;
+    margin-bottom:50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #A6A6A6;
+}
+
+.opcao h5{
+    
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #000000
+}
+
+.footer{
+    width: 414px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    bottom: 0;
+    background-color: #FFF;
+    filter:  drop-shadow(0px 1px 1px black);
+}
+
+.botao-falso{
+    width: 364px;
+    height: 61px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #CBCBCB;
+    border-radius: 50px;
+    filter:  drop-shadow(0px 2px 5px black);
+}
+
+.botao-falso h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+   
+}
+
+.selecionado{
+    border: 4px #32B72F solid;
+    
 }

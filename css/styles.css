@@ -210,3 +210,29 @@ body{
     border: 4px #32B72F solid;
     
 }
+
+.meu-icone{
+    display: none;
+    /*width: 15px;
+    height: 15px;
+    font-weight: 700;
+    background-color: #32B72F;
+    border-radius: 50%;
+
+    position: relative;
+    left: 65px;
+    bottom:2px;*/
+}
+
+.check{
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+    font-weight: 700;
+    background-color: #32B72F;
+    border-radius: 50%;
+
+    position: relative;
+    left: 65px;
+    bottom:2px;
+}

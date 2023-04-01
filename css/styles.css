@@ -236,3 +236,8 @@ body{
     left: 65px;
     bottom:2px;
 }
+
+.habilitar{
+    background: #32B72F;
+    color: #FFF;
+}

@@ -8,6 +8,14 @@ let minhaSobremesa = '';
 let valorPrato ='';
 let valorBebida ='';
 let valorSobremesa ='';
+let total = 0;
+
+let valorPratoFixed = 0;
+let valorBebidaFixed = 0;
+let valorSobremesaixed = 0;
+
+let mensagem='';
+let textoFinal ='';
 
 function habilitarBotao(){
    
@@ -113,29 +121,29 @@ function calcular(){
     if(selectPrato === selectPrato1){
         meuPrato= document.querySelector('.prato1 h4').innerHTML;
         valorPrato =document.querySelector('.prato1 h5').innerHTML;
-        console.log(meuPrato);
-        console.log(valorPrato);
+        /*console.log(meuPrato);
+        console.log(valorPrato);*/
     }
 
     if(selectPrato === selectPrato2){
         meuPrato= document.querySelector('.prato2 h4').innerHTML;
         valorPrato =document.querySelector('.prato2 h5').innerHTML;
-        console.log(meuPrato);
-        console.log(valorPrato);
+       /* console.log(meuPrato);
+        console.log(valorPrato);*/
     }
 
     if(selectPrato === selectPrato3){
         meuPrato= document.querySelector('.prato3 h4').innerHTML;
         valorPrato =document.querySelector('.prato3 h5').innerHTML;
-        console.log(meuPrato);
-        console.log(valorPrato);
+        /*console.log(meuPrato);
+        console.log(valorPrato);*/
     }
 
     if(selectPrato === selectPrato4){
         meuPrato= document.querySelector('.prato4 h4').innerHTML;
         valorPrato =document.querySelector('.prato4 h5').innerHTML;
-        console.log(meuPrato);
-        console.log(valorPrato);
+       /* console.log(meuPrato);
+        console.log(valorPrato);*/
     }
 
     // Escolhendo a Bebida
@@ -148,29 +156,29 @@ function calcular(){
     if(selectBebida === selectBebida1){
         minhaBebida= document.querySelector('.bebida1 h4').innerHTML;
         valorBebida= document.querySelector('.bebida1 h5').innerHTML;
-        console.log(minhaBebida);
-        console.log(valorBebida);
+        /*console.log(minhaBebida);
+        console.log(valorBebida);*/
     }
 
     if(selectBebida === selectBebida2){
         minhaBebida= document.querySelector('.bebida2 h4').innerHTML;
         valorBebida= document.querySelector('.bebida2 h5').innerHTML;
-        console.log(minhaBebida);
-        console.log(valorBebida);
+        /*console.log(minhaBebida);
+        console.log(valorBebida);*/
     }
 
     if(selectBebida === selectBebida3){
         minhaBebida= document.querySelector('.bebida3 h4').innerHTML;
         valorBebida= document.querySelector('.bebida3 h5').innerHTML;
-        console.log(minhaBebida);
-        console.log(valorBebida);
+        /*console.log(minhaBebida);
+        console.log(valorBebida);*/
     }
 
     if(selectBebida === selectBebida4){
         minhaBebida= document.querySelector('.bebida4 h4').innerHTML;
         valorBebida= document.querySelector('.bebida4 h5').innerHTML;
-        console.log(minhaBebida);
-        console.log(valorBebida);;
+        /*console.log(minhaBebida);
+        console.log(valorBebida);*/
     }
 
     // Escolhendo a Bebida
@@ -183,30 +191,73 @@ function calcular(){
     if(selectSobremesa === selectSobremesa1){
         minhaSobremesa= document.querySelector('.sobremesa1 h4').innerHTML;
         valorSobremesa= document.querySelector('.sobremesa1 h5').innerHTML;
-        console.log(minhaSobremesa);
-        console.log(valorSobremesa);
+        /*console.log(minhaSobremesa);
+        console.log(valorSobremesa);*/
     }
 
     if(selectSobremesa === selectSobremesa2){
         minhaSobremesa= document.querySelector('.sobremesa2 h4').innerHTML;
         valorSobremesa= document.querySelector('.sobremesa2 h5').innerHTML;
-        console.log(minhaSobremesa);
-        console.log(valorSobremesa);
+        /*console.log(minhaSobremesa);
+        console.log(valorSobremesa);*/
     }
 
     if(selectSobremesa === selectSobremesa3){
         minhaSobremesa= document.querySelector('.sobremesa3 h4').innerHTML;
         valorSobremesa= document.querySelector('.sobremesa3 h5').innerHTML;
-        console.log(minhaSobremesa);
-        console.log(valorSobremesa);
+       /* console.log(minhaSobremesa);
+        console.log(valorSobremesa);*/
     }
 
     if(selectSobremesa === selectSobremesa4){
         minhaSobremesa= document.querySelector('.sobremesa4 h4').innerHTML;
         valorSobremesa= document.querySelector('.sobremesa4 h5').innerHTML;
-        console.log(minhaSobremesa);
-        console.log(valorSobremesa);
+        /*console.log(minhaSobremesa);
+        console.log(valorSobremesa);*/
     }
+
+    //Transformando as String em Numbers
+    valorPratoFixed= Number(valorPrato);
+    valorBebidaFixed = Number(valorBebida);
+    valorSobremesaFixed = Number(valorSobremesa);
+    total =  valorPratoFixed + valorBebidaFixed + valorSobremesaFixed;
+    total = total.toFixed(2)
+    
+
+    // Mensagem a ser enviada para o Usuario
+    
+   const textoPrato = document.querySelector('.mensagemWhats .tprato');
+    textoPrato.innerHTML= meuPrato;
+
+    const textoBebida = document.querySelector('.mensagemWhats .tbebida')
+    textoBebida.innerHTML = minhaBebida;
+
+    const textoSobremesa = document.querySelector('.mensagemWhats .tsobremesa')
+    textoSobremesa.innerHTML = minhaSobremesa;
+
+    const textoTotal = document.querySelector('.mensagemWhats .ttotal')
+    textoTotal.innerHTML = total;
+
+    /*mensagem = document.querySelector('.mensagemWhats').innerHTML;*/
+    
+    let text=(
+        `Olá, gostaria de fazer o seu pedido:
+        - Prato:${meuPrato}
+        - Bebida:${minhaBebida}
+        - Sobremesa:${minhaSobremesa}
+        - Total:${total}`)
+        console.log(text);
+    
+    textoFinal = encodeURI(text);
+
+    
+    /*console.log(`https://wa.me/55991986103?text=${textoFinal}`);*/
+
+    
+    window.location.href = (`https://wa.me/55991986103?text=${textoFinal}`);
 
     
 }
+
+     
+

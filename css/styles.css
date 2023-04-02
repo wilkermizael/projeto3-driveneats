@@ -6,6 +6,9 @@ body{
     font-family: 'Righteous', cursive;
     font-family: 'Roboto', sans-serif;
 }
+a{
+    text-decoration:none;
+}
 .main{
     width: 414px;
     height:1000px; /* Retirar altura*/
@@ -162,7 +165,20 @@ body{
 .opcao h5{
     
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
+    left: 35px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #000000
+}
+
+.opcao h3{
+    
+    position: absolute;
+    bottom: 0px ;
     left: 15px;
 
     font-family: 'Roboto', sans-serif;
@@ -239,5 +255,15 @@ body{
 
 .habilitar{
     background: #32B72F;
-    color: #FFF;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
 }
+
+.mensagemWhats{
+    display: none;
+}
+

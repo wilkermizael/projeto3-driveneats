@@ -28,7 +28,7 @@
 
             <div  class="cardapio prato">
                 
-                <div class="prato1 opcao " onclick="selecionarPrato('.prato1' , '.prato1 .meu-icone')">
+                <div data-test="dish" class="prato1 opcao " onclick="selecionarPrato('.prato1' , '.prato1 .meu-icone')">
                     <img src="./img/frango_yin_yang.png">
                     <h4>Frango Yin Yang</h4>
                     <p>Um pouco de salada</br>
@@ -41,7 +41,7 @@
 
                 
                 
-                <div onclick="selecionarPrato('.prato2', '.prato2 .meu-icone')" class="prato2 opcao">
+                <div data-test="dish" onclick="selecionarPrato('.prato2', '.prato2 .meu-icone')" class="prato2 opcao">
                     <img src="./img/frango_yin_yang.png">
                     <h4>Macarrão Yin Yang</h4>
                     <p>Um pouco de salada</br>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
 
-                <div onclick="selecionarPrato('.prato3', '.prato3 .meu-icone')" class=" prato3 opcao">
+                <div data-test="dish" onclick="selecionarPrato('.prato3', '.prato3 .meu-icone')" class=" prato3 opcao">
                     <img src="./img/frango_yin_yang.png">
                     <h4>Carne Yin Yang</h4>
                     <p>Um pouco de salada</br>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
 
-                <div onclick="selecionarPrato('.prato4', '.prato4 .meu-icone')" class="opcao prato4">
+                <div data-test="dish" onclick="selecionarPrato('.prato4', '.prato4 .meu-icone')" class="opcao prato4">
                     <img src="./img/frango_yin_yang.png">
                     <h4 >Peixe Yin Yang</h4>
                     <p>Um pouco de salada</br>
@@ -89,7 +89,7 @@
             </div>
 
             <div class="cardapio bebida">
-                <div onclick="selecionarBebida('.bebida1', '.bebida1 .meu-icone')" class="opcao bebida1">
+                <div data-test="drink" onclick="selecionarBebida('.bebida1', '.bebida1 .meu-icone')" class="opcao bebida1">
                     <img src="./img/coca-cola.png">
                     <h4>Coquinha Gelada</h4>
                     <p>Lata 350 ml</p>
@@ -100,7 +100,7 @@
 
                 </div>
 
-                <div onclick="selecionarBebida('.bebida2', '.bebida2 .meu-icone')" class="opcao bebida2">
+                <div data-test="drink" onclick="selecionarBebida('.bebida2', '.bebida2 .meu-icone')" class="opcao bebida2">
                     <img src="./img/coca-cola.png">
                     <h4>Fanta Gelada</h4>
                     <p>Lata 350 ml</p>
@@ -110,7 +110,7 @@
                     </div>
                 </div>
 
-                <div onclick="selecionarBebida('.bebida3', '.bebida3 .meu-icone')" class="opcao bebida3">
+                <div data-test="drink" onclick="selecionarBebida('.bebida3', '.bebida3 .meu-icone')" class="opcao bebida3">
                     <img src="./img/coca-cola.png">
                     <h4>Pepsi Gelada</h4>
                     <p>Lata 350 ml</p>
@@ -120,7 +120,7 @@
                     </div>
                 </div>
 
-                <div onclick="selecionarBebida('.bebida4', '.bebida4 .meu-icone')" class="opcao bebida4">
+                <div data-test="drink" onclick="selecionarBebida('.bebida4', '.bebida4 .meu-icone')" class="opcao bebida4">
                     <img src="./img/coca-cola.png">
                     <h4>Cerveja Gelada</h4>
                     <p>Lata 350 ml</p>
@@ -139,13 +139,13 @@
          
         <!-- Escolhendo  a sua sobremesa-->
 
-        <div class="container-conteudo">
+        <div  class="container-conteudo">
             <div class="titulo">
                 <h3>Por fim, a sua sobremesa</h3>
             </div>
 
             <div class="cardapio sobremesa">
-                <div onclick="selecionarSobremesa('.sobremesa1', '.sobremesa1 .meu-icone' , 'sobremesa1 .valor')" class="opcao sobremesa1">
+                <div data-test="dessert" onclick="selecionarSobremesa('.sobremesa1', '.sobremesa1 .meu-icone' , 'sobremesa1 .valor')" class="opcao sobremesa1">
                     <img src="./img/pudim.png">
                     <h4>Apenas Pudim</h4>
                     <p></p>
@@ -155,7 +155,7 @@
                     </div>
                 </div>
 
-                <div onclick="selecionarSobremesa('.sobremesa2', '.sobremesa2 .meu-icone', '.sobremesa2 .valor')" class="opcao sobremesa2">
+                <div data-test="dessert" onclick="selecionarSobremesa('.sobremesa2', '.sobremesa2 .meu-icone', '.sobremesa2 .valor')" class="opcao sobremesa2">
                     <img src="./img/pudim.png">
                     <h4>Cuscuz</h4>
                     <p></p>
@@ -165,7 +165,7 @@
                     </div>
                 </div>
 
-                <div onclick="selecionarSobremesa('.sobremesa3','.sobremesa3 .meu-icone', '.sobremesa3 .valor')" class="opcao sobremesa3">
+                <div data-test="dessert" onclick="selecionarSobremesa('.sobremesa3','.sobremesa3 .meu-icone', '.sobremesa3 .valor')" class="opcao sobremesa3">
                     <img src="./img/pudim.png">
                     <h4>Geleia</h4>
                     <p></p>
@@ -175,7 +175,7 @@
                     </div>
                 </div>
 
-                <div onclick="selecionarSobremesa('.sobremesa4', '.sobremesa4 .meu-icone')" class="opcao sobremesa4">
+                <div data-test="dessert" onclick="selecionarSobremesa('.sobremesa4', '.sobremesa4 .meu-icone')" class="opcao sobremesa4">
                     <img src="./img/pudim.png">
                     <h4>Arroz doce</h4>
                     <p></p>
@@ -192,7 +192,7 @@
         <!-- Botão de rodape-->
         
         <div class="footer">
-          <button type="button" disabled onclick="calcular()" class="botao-falso" onclick="enviar()">
+          <button data-test="order-btn" type="button" disabled onclick="calcular()" class="botao-falso" onclick="enviar()">
                 <h1> Selecione os 3 itens<br> para fechar o pedido</h1>
                 
             </button>

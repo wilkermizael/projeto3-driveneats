@@ -240,15 +240,14 @@ function calcular(){
 
     /*mensagem = document.querySelector('.mensagemWhats').innerHTML;*/
     
-    let text=(
-        `Olá, gostaria de fazer o seu pedido:
+    let text=(`Olá, gostaria de fazer o seu pedido:
         - Prato:${meuPrato}
         - Bebida:${minhaBebida}
         - Sobremesa:${minhaSobremesa}
         - Total:${total}`)
         console.log(text);
     
-    textoFinal = encodeURI(text);
+    textoFinal = encodeURIComponent(text);
 
     
     /*console.log(`https://wa.me/55991986103?text=${textoFinal}`);*/

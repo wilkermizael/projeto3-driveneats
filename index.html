@@ -43,7 +43,7 @@
                 
                 <div onclick="selecionarPrato('.prato2', '.prato2 .meu-icone')" class="prato2 opcao">
                     <img src="./img/frango_yin_yang.png">
-                    <h4>Frango Yin Yang</h4>
+                    <h4>Macarrão Yin Yang</h4>
                     <p>Um pouco de salada</br>
                     Um pouco de Batata</p>
                     <h5>R$ 15,50</h5>
@@ -54,7 +54,7 @@
 
                 <div onclick="selecionarPrato('.prato3', '.prato3 .meu-icone')" class=" prato3 opcao">
                     <img src="./img/frango_yin_yang.png">
-                    <h4>Frango Yin Yang</h4>
+                    <h4>Carne Yin Yang</h4>
                     <p>Um pouco de salada</br>
                     Um pouco de Batata</p>
                     <h5>R$ 21,50</h5>
@@ -65,7 +65,7 @@
 
                 <div onclick="selecionarPrato('.prato4', '.prato4 .meu-icone')" class="opcao prato4">
                     <img src="./img/frango_yin_yang.png">
-                    <h4>Frango Yin Yang</h4>
+                    <h4 >Peixe Yin Yang</h4>
                     <p>Um pouco de salada</br>
                     Um pouco de Batata</p>
                     <h5>R$ 30,00</h5>
@@ -102,7 +102,7 @@
 
                 <div onclick="selecionarBebida('.bebida2', '.bebida2 .meu-icone')" class="opcao bebida2">
                     <img src="./img/coca-cola.png">
-                    <h4>Coquinha Gelada</h4>
+                    <h4>Fanta Gelada</h4>
                     <p>Lata 350 ml</p>
                     <h5>R$ 7,50</h5>
                     <div class="meu-icone">
@@ -112,7 +112,7 @@
 
                 <div onclick="selecionarBebida('.bebida3', '.bebida3 .meu-icone')" class="opcao bebida3">
                     <img src="./img/coca-cola.png">
-                    <h4>Coquinha Gelada</h4>
+                    <h4>Pepsi Gelada</h4>
                     <p>Lata 350 ml</p>
                     <h5>R$ 8,50</h5>
                     <div class="meu-icone">
@@ -122,7 +122,7 @@
 
                 <div onclick="selecionarBebida('.bebida4', '.bebida4 .meu-icone')" class="opcao bebida4">
                     <img src="./img/coca-cola.png">
-                    <h4>Coquinha Gelada</h4>
+                    <h4>Cerveja Gelada</h4>
                     <p>Lata 350 ml</p>
                     <h5>R$ 9,50</h5>
                     <div class="meu-icone">
@@ -145,7 +145,7 @@
             </div>
 
             <div class="cardapio sobremesa">
-                <div onclick="selecionarSobremesa('.sobremesa1', '.sobremesa1 .meu-icone')" class="opcao sobremesa1">
+                <div onclick="selecionarSobremesa('.sobremesa1', '.sobremesa1 .meu-icone' , 'sobremesa1 .valor')" class="opcao sobremesa1">
                     <img src="./img/pudim.png">
                     <h4>Apenas Pudim</h4>
                     <p></p>
@@ -155,9 +155,9 @@
                     </div>
                 </div>
 
-                <div onclick="selecionarSobremesa('.sobremesa2', '.sobremesa2 .meu-icone')" class="opcao sobremesa2">
+                <div onclick="selecionarSobremesa('.sobremesa2', '.sobremesa2 .meu-icone', '.sobremesa2 .valor')" class="opcao sobremesa2">
                     <img src="./img/pudim.png">
-                    <h4>Apenas Pudim</h4>
+                    <h4>Cuscuz</h4>
                     <p></p>
                     <h5>R$ 10,50</h5>
                     <div class="meu-icone">
@@ -165,9 +165,9 @@
                     </div>
                 </div>
 
-                <div onclick="selecionarSobremesa('.sobremesa3','.sobremesa3 .meu-icone')" class="opcao sobremesa3">
+                <div onclick="selecionarSobremesa('.sobremesa3','.sobremesa3 .meu-icone', '.sobremesa3 .valor')" class="opcao sobremesa3">
                     <img src="./img/pudim.png">
-                    <h4>Apenas Pudim</h4>
+                    <h4>Geleia</h4>
                     <p></p>
                     <h5>R$ 11,90</h5>
                     <div class="meu-icone">
@@ -177,7 +177,7 @@
 
                 <div onclick="selecionarSobremesa('.sobremesa4', '.sobremesa4 .meu-icone')" class="opcao sobremesa4">
                     <img src="./img/pudim.png">
-                    <h4>Apenas Pudim</h4>
+                    <h4>Arroz doce</h4>
                     <p></p>
                     <h5>R$ 12,90</h5>
                     <div class="meu-icone">
@@ -192,10 +192,10 @@
         <!-- Botão de rodape-->
         
         <div class="footer">
-            <div class="botao-falso">
+            <button type="button" disabled onclick="calcular()" class="botao-falso">
                 <h1> Selecione os 3 itens<br> para fechar o pedido</h1>
                 
-            </div>
+            </button>
         </div>
 
     </div>

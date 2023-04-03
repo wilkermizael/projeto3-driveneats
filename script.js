@@ -244,7 +244,7 @@ function calcular(){
         - Prato:${meuPrato}
         - Bebida:${minhaBebida}
         - Sobremesa:${minhaSobremesa}
-        - Total:${total}`)
+        - Total: R$ ${total}`)
         console.log(text);
     
     textoFinal = encodeURIComponent(text);

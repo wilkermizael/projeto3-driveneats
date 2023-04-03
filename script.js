@@ -236,25 +236,19 @@ function calcular(){
     const textoSobremesa = document.querySelector('.mensagemWhats .tsobremesa')
     textoSobremesa.innerHTML = minhaSobremesa;
 
-    const textoTotal = document.querySelector('.mensagemWhats .ttotal')
-    /*textoTotal.innerHTML = total;
-    console.log(textoTotal);*/
-
+    /*const textoTotal = document.querySelector('.mensagemWhats .ttotal')*/
     
+
+    //Imprimi texto do pedido no Whatsapp
     
     let text=(`Olá, gostaria de fazer o seu pedido:
         - Prato:${meuPrato}
         - Bebida:${minhaBebida}
         - Sobremesa:${minhaSobremesa}
-        - Total: R$${total}`)
+        - Total: R$${total}`);
         
     
     textoFinal = encodeURIComponent(text);
-
-    
-    /*console.log(`https://wa.me/55991986103?text=${textoFinal}`);*/
-
-    
     window.location.href = (`https://wa.me/55991986103?text=${textoFinal}`);
 
     

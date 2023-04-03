@@ -223,6 +223,7 @@ function calcular(){
     total =  valorPratoFixed + valorBebidaFixed + valorSobremesaFixed;
     total = total.toFixed(2)
     
+    
 
     // Mensagem a ser enviada para o Usuario
     
@@ -236,15 +237,16 @@ function calcular(){
     textoSobremesa.innerHTML = minhaSobremesa;
 
     const textoTotal = document.querySelector('.mensagemWhats .ttotal')
-    textoTotal.innerHTML = total;
+    /*textoTotal.innerHTML = total;
+    console.log(textoTotal);*/
 
-    /*mensagem = document.querySelector('.mensagemWhats').innerHTML;*/
+    
     
     let text=(`Olá, gostaria de fazer o seu pedido:
         - Prato:${meuPrato}
         - Bebida:${minhaBebida}
         - Sobremesa:${minhaSobremesa}
-        - Total: R$ ${total}`)
+        - Total: R$${total}`)
         console.log(text);
     
     textoFinal = encodeURIComponent(text);
@@ -253,7 +255,7 @@ function calcular(){
     /*console.log(`https://wa.me/55991986103?text=${textoFinal}`);*/
 
     
-    window.location.href = (`https://wa.me/55991986103?text=${textoFinal}`);
+   /* window.location.href = (`https://wa.me/55991986103?text=${textoFinal}`);*/
 
     
 }

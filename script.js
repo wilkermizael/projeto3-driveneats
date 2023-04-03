@@ -247,7 +247,7 @@ function calcular(){
         - Bebida:${minhaBebida}
         - Sobremesa:${minhaSobremesa}
         - Total: R$${total}`)
-        console.log(text);
+        
     
     textoFinal = encodeURIComponent(text);
 
@@ -255,7 +255,7 @@ function calcular(){
     /*console.log(`https://wa.me/55991986103?text=${textoFinal}`);*/
 
     
-   /* window.location.href = (`https://wa.me/55991986103?text=${textoFinal}`);*/
+    window.location.href = (`https://wa.me/55991986103?text=${textoFinal}`);
 
     
 }

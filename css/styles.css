@@ -197,18 +197,20 @@ a{
     position: relative;
     position: fixed;
     bottom: 0;
-    background-color: #FFF;
+    background-color: #FFFFFF;
     filter:  drop-shadow(0px 1px 1px black);
 }
 
+button{
+    background-color:#CBCBCB;
+}
 .botao-falso{
     width: 364px;
     height: 61px;
     display:flex;
     justify-content: center;
     align-items: center;
-
-    background-color: #CBCBCB;
+    /*background-color:#CBCBCB;*/
     border-radius: 50px;
     filter:  drop-shadow(0px 2px 5px black);
 }
